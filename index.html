@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="node_modules/semantic-ui/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>What-a-day</title>
+</head>
+<body>
+
+    <div class="ui grid fourteen wide column centered global_div">
+        <div class="three wide column">
+            <h3>Jour</h3>
+            <div class="ui input">
+                <input id="get_day" type="text" placeholder="Day">
+            </div>
+        </div>
+        <div class="two wide column">
+            <h3>Mois</h3>
+            <select id="get_month" class="ui teal dropdown">
+                <option value="01">Janvier</option>
+                <option value="02">Février</option>
+                <option value="03">Mars</option>
+                <option value="04">Avril</option>
+                <option value="05">Mai</option>
+                <option value="06">Juin</option>
+                <option value="07">Juillet</option>
+                <option value="08">Août</option>
+                <option value="09">Septembre</option>
+                <option value="10">Octobre</option>
+                <option value="11">Novembre</option>
+                <option value="12">Décembre</option>
+            </select>
+        </div>
+        <div class="three wide column">
+            <h3>Année</h3>
+            <div class="ui input">
+                <input id="get_year" type="text" placeholder="Année">
+            </div>
+        </div>
+    </div>
+    <div class="ui grid centered">
+        <div class="four wide column">
+            <button  id="validate" class="ui right labeled icon button">
+              <i class="right arrow icon"></i>
+              Wich weekday is it?
+          </button>
+      </div>
+  </div>
+
+
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/moment/moment.js"></script>
+  <script src="node_modules/semantic-ui/dist/semantic.min.js"></script>
+  <script src="app.js" ></script>
+</body>
+</html>
