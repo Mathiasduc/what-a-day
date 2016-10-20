@@ -1,3 +1,4 @@
+"use strict"
 var getVal= {
 	day: () => $("#get_day").val(),
 	month: () => $("#get_month").val(),
@@ -30,10 +31,11 @@ var getVal= {
 			console.log(numDay);
 			var weekDay = app.weekDaysArr[numDay];
 			console.log(weekDay);
-			return (weekDay);
+			app.display(weekDay);
 		},
-		display: function() {
-
+		display: function(weekDay) {
+			$("#displayOverlay").html(weekDay);
+			$("#displayOverlay").overlay();
 		}
 	};
 	app.init();

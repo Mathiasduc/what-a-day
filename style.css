@@ -1,3 +1,6 @@
 .global_div.global_div.global_div.global_div.global_div.global_div{
 	margin-top: 200px;
+	display: flex;
+	justify-content: center;
 }
+
